@@ -4,7 +4,7 @@
 
 	//mencari field sesuai id pada barisan tabel dan menghapusnya
 	if(isset($_GET['id'])){
-		$update = mysqli_query($conn, "DELETE FROM pinjam WHERE id_pinjam = '".$_GET['id']."' ");
+		$delete = mysqli_query($conn, "DELETE FROM pinjam WHERE id_pinjam = '".$_GET['id']."' ");
 	}
 	
 	//kembali ke data peminjam sesuai akun yang digunakan sebelumnya
