@@ -22,7 +22,7 @@ Petugas
 -	Dapat melakukan confirm pengembalian buku.
 -	Dapat melihat notifikasi pesan dari admin.
 
-# Tampilan Web
+# Tampilan Web.
 Tampilan Admin
 -	Tampilan Beranda
 -	Tampilan Tambah Data
