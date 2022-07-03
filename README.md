@@ -37,6 +37,34 @@ Tampilan Petugas
 -	Tampilan Data Peminjaman
 -	Tampilan Pop-up Notifikasi
 
+# Penjelasan Kodingan
+
+Penjelasan kodingan CRUD
+
+<h3>Create</h3>
+Pada kodingan dibawah adalah kodingan sql didalam file create.php untuk memasukan data yang di input ke dalam tabel pinjam dan setelah itu kembali lagi ke beranda masing masing
+
+![1](https://user-images.githubusercontent.com/76039896/177036715-43f282c7-14fa-430e-88a5-df1bf20d01e0.PNG)
+
+<h3>Update</h3>
+Pada kodingan dibawah adalah kodingan dalam file update.php. Pada gambar 1 menampilkan kodingan sql untuk memasukan data baru kedalam tabel pinjam dengan id_pinjam tertentu dimana id_didapat dari barisan id yang di jabarkan pada halaman list data peminjam. Lalu gambar 2 menampilkan kodingan untuk menampilkan menu form isi yang isiannya sudah di isi dari data yang di dapat dari barisan ayng dijabarkan pada halaman list data peminjam
+
+![2](https://user-images.githubusercontent.com/76039896/177036813-71de3fbc-0a0d-489d-8982-4e1c3faa57cf.PNG)
+![3](https://user-images.githubusercontent.com/76039896/177036831-14dba7c4-462b-4c3a-9116-9978890753ec.PNG)
+
+
+<h3>Read</h3>
+Pada kodingan dibawah adalah kodingan dalam file detail.php. Pada gambar 1 menampilkan kodingan sql untuk mencari record dengan id tertentu yang querynya dimasukan kedalam variable penampung. Lalu gambar 2 menampilkan kodingan untuk menampilkan menu form detail yang datanya sudah di isi dari data yang diambil dari variabel penampung tadi.
+
+![4](https://user-images.githubusercontent.com/76039896/177036837-1a7c849b-cd33-450e-9120-1579166a66e3.PNG)
+![5](https://user-images.githubusercontent.com/76039896/177036846-9dd2dc55-e097-4010-84e5-6a3a0b42c899.PNG)
+
+
+<h3>Delete</h3>
+Pada kodingan dibawah adalah kodingan dalam file delete.php. Yang menampilkan kodingan sql untuk mencari menghapus data dengan id tertentu yang querynya dimasukan kedalam variable penampung.
+
+![6](https://user-images.githubusercontent.com/76039896/177037096-51e443e6-19ca-4a62-a35b-12d3197c1434.PNG)
+
 # Tampilan WEB
 
 Tampilan Login
