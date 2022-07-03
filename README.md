@@ -1,5 +1,5 @@
 # Aplikasi Perpustakaan Berbasis Web
-  Aplikasi perpustakaan berbasis web ini adalah aplikasi yang digunakan sebagai admin dan petugas yang memiliki fitur Beranda, tambah data, Data peminjam dan Notifikasi, pada tambah data dan data peminjam dapat melakukan interaksi CRUD kepada database melalui website.
+ 
 Penjelasan Singkat
 Web Perpustakaan ini dibuat untuk mengelola perpustakaan dimana Admin dan petugas dapat terbantu dalam mengelola peminjam dan buku dan dengan adanya sistem pewncatatan tanggal peminjaman secara otomatis dan pencatatan tanggal pengembalian dapat secara otomatis dengan menekan tombol confirm. Pada Saat meminjam, petugas membutuhkan 6 data :
 1. Judul Buku yang akan dipinjam
