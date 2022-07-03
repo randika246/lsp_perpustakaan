@@ -67,8 +67,6 @@ Pada kodingan dibawah adalah kodingan dalam file delete.php. Yang menampilkan ko
 
 <h3>Notifikasi</h3>
 
-![image](https://user-images.githubusercontent.com/108450178/177037842-2667dd8f-d92a-4239-b565-52eae4d67c3a.png)
-
 Script dibawah ini berguna untuk mengambil data dari database dan menampilkannya untuk petugas, dengan function load_unseen_notification menggunakan ajax untuk mengambil data dengan fetch.php, metode yang digunakan untuk menampilkan kelayar adalah POST dan untuk tampilannya digunakan data view type json.
 
 Untuk fungsi ketika button notification pada bagian petugas ditekan, setelah ajax melakukan fetch, akan dilakukan pemasukan data seen, dengan disambungkan dengan addnew.php kemudian data seen akan masuk ke dalam database notifikasi dan data total seen akan bertambah 1.
