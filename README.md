@@ -65,6 +65,25 @@ Pada kodingan dibawah adalah kodingan dalam file delete.php. Yang menampilkan ko
 
 ![6](https://user-images.githubusercontent.com/76039896/177037096-51e443e6-19ca-4a62-a35b-12d3197c1434.PNG)
 
+<h3>Notifikasi</h3>
+
+![image](https://user-images.githubusercontent.com/108450178/177037842-2667dd8f-d92a-4239-b565-52eae4d67c3a.png)
+
+Script dibawah ini berguna untuk mengambil data dari database dan menampilkannya untuk petugas, dengan function load_unseen_notification menggunakan ajax untuk mengambil data dengan fetch.php, metode yang digunakan untuk menampilkan kelayar adalah POST dan untuk tampilannya digunakan data view type json.
+
+Untuk fungsi ketika button notification pada bagian petugas ditekan, setelah ajax melakukan fetch, akan dilakukan pemasukan data seen, dengan disambungkan dengan addnew.php kemudian data seen akan masuk ke dalam database notifikasi dan data total seen akan bertambah 1.
+
+Dalam database notifikasi ini terdapat 2 tabel yaitu, tabel admin dan tabel petugas, ketika petugas mengirimkan pesan notifikasi maka tabel admin dan tabel petugas akan diisi oleh pesan tersebut sehingga ketika dilakukan perintah dari fetch.php, perintah tersebut akan membaca siapa yang membuka notifikasi tersebut admin atau petugas, dan status readnya akan diupdate kedalam tabel yang bersangkutan.
+
+![image](https://user-images.githubusercontent.com/108450178/177037842-2667dd8f-d92a-4239-b565-52eae4d67c3a.png)
+![image](https://user-images.githubusercontent.com/108450178/177037859-bd9e7892-ca17-43ba-b14e-679a4f8663a5.png)
+
+Alur Pengiriman Notifikasi
+1. Pesan dibuat oleh admin pada bagian notifikasi, setelah pesan dibuat, admin akan klik submit dan pesan akan masuk kedalam database notifikasi.
+2. Pada bagian petugas, akan terlihat pada bagian tombol icon bumi dengan angka 1, terlihat bahwa ada pesan yang belum terbaca.
+3. Ketika Petugas menekan tombol icon tersebut, maka akan terlihat pesan dan status di dalam database tersebut akan berubah.
+
+
 # Tampilan WEB
 
 Tampilan Login
