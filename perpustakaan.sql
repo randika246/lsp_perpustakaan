@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.3
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 02, 2022 at 11:39 AM
--- Server version: 10.4.14-MariaDB
--- PHP Version: 7.2.34
+-- Generation Time: Jul 03, 2022 at 12:58 PM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -46,29 +46,6 @@ INSERT INTO `admin` (`id_admin`, `nama`, `authority`, `username`, `password`) VA
 -- --------------------------------------------------------
 
 --
--- Table structure for table `buku`
---
-
-CREATE TABLE `buku` (
-  `id_buku` int(11) NOT NULL,
-  `nm_buku` varchar(50) NOT NULL,
-  `genre` varchar(50) NOT NULL,
-  `pengarang` varchar(50) NOT NULL,
-  `penerbit` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `buku`
---
-
-INSERT INTO `buku` (`id_buku`, `nm_buku`, `genre`, `pengarang`, `penerbit`) VALUES
-(1, 'Matematika', 'Pendidikan', 'Pengarang1', 'Penerbit2'),
-(2, 'Cinta Hati', 'Cinta', 'Pengarang2', 'Penerbit2'),
-(3, 'Struktur Mobil', 'Mekanik', 'Pengarang3', 'Penerbit4');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `pinjam`
 --
 
@@ -90,7 +67,8 @@ CREATE TABLE `pinjam` (
 
 INSERT INTO `pinjam` (`id_pinjam`, `tgl_pinjam`, `tgl_kembali`, `buku`, `nama`, `no_ktp`, `alamat`, `jk`, `no_tlp`) VALUES
 (4, '2022-07-02', '2022-07-02', 'Kenangan Cinta', 'Arya', '123456', 'Jln Anggur', 'Pria', '1234567890'),
-(5, '2022-07-02', '2022-07-02', 'RUmah', 'asd', 'asf', 'asd', 'Wanita', 'asd');
+(5, '2022-07-02', '2022-07-02', 'RUmah', 'asd', 'asf', 'asd', 'Wanita', 'asd'),
+(6, '2022-07-03', '2022-07-03', 'Matematika', 'dsf', 'sd', 'dsf', 'Pria', 'asd');
 
 --
 -- Indexes for dumped tables
@@ -101,12 +79,6 @@ INSERT INTO `pinjam` (`id_pinjam`, `tgl_pinjam`, `tgl_kembali`, `buku`, `nama`, 
 --
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`id_admin`);
-
---
--- Indexes for table `buku`
---
-ALTER TABLE `buku`
-  ADD PRIMARY KEY (`id_buku`);
 
 --
 -- Indexes for table `pinjam`
@@ -125,16 +97,10 @@ ALTER TABLE `admin`
   MODIFY `id_admin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `buku`
---
-ALTER TABLE `buku`
-  MODIFY `id_buku` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
 -- AUTO_INCREMENT for table `pinjam`
 --
 ALTER TABLE `pinjam`
-  MODIFY `id_pinjam` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_pinjam` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
